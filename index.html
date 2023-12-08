@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/JacobLett/bootstrap4-latest/master/bootstrap-4-latest.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<title>Document</title>
+</head>
+
+<div class="container-fluid">
+    <!-- header -->
+    <section>
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./images/logo-header.png" alt="logo-header" width="180"
+                        height="42"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-mega position-static">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside">Shop</a>
+                            <div class="dropdown-menu shadow w-100">
+                                <div class="mega-content px-4">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-4 col-md-3 py-4">
+                                                <h5 class="fw-bold">Shop by Brand</h5>
+                                                <div class="list-group">
+                                                    <a class="list-group-item border-0" href="#"><i
+                                                            class="bi bi-chevron-right"></i>Apple</a>
+                                                    <a class="list-group-item border-0" href="#"><i
+                                                            class="bi bi-chevron-right"></i>Sony</a>
+                                                    <a class="list-group-item border-0" href="#"><i
+                                                            class="bi bi-chevron-right"></i>Samsung</a>
+                                                    <a class="list-group-item border-0" href="#"><i
+                                                            class="bi bi-chevron-right"></i>Canon</a>
+                                                    <a class="list-group-item border-0" href="#"><i
+                                                            class="bi bi-chevron-right"></i>Huawei</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-3 py-4">
+                                                <h5 class="fw-bold">Shop by Price</h5>
+                                                <div class="list-group">
+                                                    <a class="list-group-item border-0" href="#">Under $50</a>
+                                                    <a class="list-group-item border-0" href="#">$50 - $100</a>
+                                                    <a class="list-group-item border-0" href="#">$100 - $200</a>
+                                                    <a class="list-group-item border-0" href="#">$200 - $500</a>
+                                                    <a class="list-group-item border-0" href="#">Over $500</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-3 py-4">
+                                                <h5 class="fw-bold">Categories</h5>
+                                                <div class="list-group">
+                                                    <a class="list-group-item border-0" href="#"><i
+                                                            class="bi bi-chevron-right"></i>Headphones</a>
+                                                    <a class="list-group-item border-0" href="#"><i
+                                                            class="bi bi-chevron-right"></i>Smart Phones</a>
+                                                    <a class="list-group-item border-0" href="#"><i
+                                                            class="bi bi-chevron-right"></i>Laptops</a>
+                                                    <a class="list-group-item border-0" href="#"><i
+                                                            class="bi bi-chevron-right"></i>Smart Watches</a>
+                                                    <a class="list-group-item border-0" href="#"><i
+                                                            class="bi bi-chevron-right"></i>Tablets</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-3 py-4">
+                                                <h5 class="fw-bold">Shop by Color</h5>
+                                                <div class="list-group">
+                                                    <a class="list-group-item border-0" href="#"><i
+                                                            class="bi bi-circle-fill"></i>Black</a>
+                                                    <a class="list-group-item border-0" href="#"><i
+                                                            class="bi bi-circle-fill"></i>Silver</a>
+                                                    <a class="list-group-item border-0" href="#"><i
+                                                            class="bi bi-circle-fill"></i>White</a>
+                                                    <a class="list-group-item border-0" href="#"><i
+                                                            class="bi bi-circle-fill"></i>Red</a>
+                                                    <a class="list-group-item border-0" href="#"><i
+                                                            class="bi bi-circle-fill"></i>Blue</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-3 py-4">
+                                                <h5 class="fw-bold">Shop by Brand</h5>
+                                                <div class="list-group">
+                                                    <a class="list-group-item border-0" href="#"><i
+                                                            class="bi bi-chevron-right"></i>Her</a>
+                                                    <a class="list-group-item border-0" href="#"><i
+                                                            class="bi bi-chevron-right"></i>Him</a>
+                                                    <a class="list-group-item border-0" href="#"><i
+                                                            class="bi bi-chevron-right"></i>Gift</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-3 py-4">
+                                                <img src="./images/banner2-1.jpg" alt="banner2-1" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-mega position-static">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside">Categories</a>
+                            <div class="dropdown-menu shadow w-100">
+                                <div class="mega-content px-4">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-4 col-md-3 py-4 card mx-2 w-auto">
+                                                <img src="./images/icon6-1.png" alt="icon6-1"
+                                                    class="img-fluid align-self-center" width="80">
+                                                <h5 class="text-center fs-5 py-3">Smart Watches</h5>
+                                                <button
+                                                    class="btn btn-primary rounded-5 w-auto fs-6 align-self-center">Explore
+                                                    Now</button>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-3 py-4 card mx-2 w-auto">
+                                                <img src="./images/icon2-1.png" alt="icon2-1"
+                                                    class="img-fluid align-self-center" width="80">
+                                                <h5 class="text-center fs-5 py-3">Headphones</h5>
+                                                <button
+                                                    class="btn btn-primary rounded-5 w-auto fs-6 align-self-center">Explore
+                                                    Now</button>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-3 py-4 card mx-2 w-auto">
+                                                <img src="./images/icon1-1.png" alt="icon1-1"
+                                                    class="img-fluid align-self-center" width="80">
+                                                <h5 class="text-center fs-5 py-3">Smart Phones</h5>
+                                                <button
+                                                    class="btn btn-primary rounded-5 w-auto fs-6 align-self-center">Explore
+                                                    Now</button>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-3 py-4 card mx-2 w-auto">
+                                                <img src="./images/icon3-1.png" alt="icon3-1"
+                                                    class="img-fluid align-self-center" width="80">
+                                                <h5 class="text-center fs-5 py-3">Laptops</h5>
+                                                <button
+                                                    class="btn btn-primary rounded-5 w-auto fs-6 align-self-center">Explore
+                                                    Now</button>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-3 py-4 card mx-2 w-auto">
+                                                <img src="./images/icon5-1.png" alt="icon5-1"
+                                                    class="img-fluid align-self-center" width="80">
+                                                <h5 class="text-center fs-5 py-3">Gaming Consoles</h5>
+                                                <button
+                                                    class="btn btn-primary rounded-5 w-auto fs-6 align-self-center">Explore
+                                                    Now</button>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-3 py-4 card mx-2 w-auto">
+                                                <img src="./images/icon4-1.png" alt="icon4-1"
+                                                    class="img-fluid align-self-center" width="80">
+                                                <h5 class="text-center fs-5 py-3">Tablets</h5>
+                                                <button
+                                                    class="btn btn-primary rounded-5 w-auto fs-6 align-self-center">Explore
+                                                    Now</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-mega position-static">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside">Quick Find</a>
+                            <div class="dropdown-menu shadow w-100">
+                                <div class="mega-content px-4">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-4 col-md-3 py-4">
+                                                <h5 class="fw-bold">Categories</h5>
+                                                <div class="list-group">
+                                                    <a class="list-group-item border-0" href="#">Smart Watches</a>
+                                                    <a class="list-group-item border-0" href="#">Smart Phones</a>
+                                                    <a class="list-group-item border-0" href="#">Tablets</a>
+                                                    <a class="list-group-item border-0" href="#">Headphones</a>
+                                                    <a class="list-group-item border-0" href="#">Custom</a>
+                                                    <a class="list-group-item border-0" href="#">More</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-3 py-4">
+                                                <h5 class="fw-bold">Tags</h5>
+                                                <div class="list-group">
+                                                    <a class="list-group-item border-0" href="#">5G</a>
+                                                    <a class="list-group-item border-0" href="#">Wifi</a>
+                                                    <a class="list-group-item border-0" href="#">Game</a>
+                                                    <a class="list-group-item border-0" href="#">Combo</a>
+                                                    <a class="list-group-item border-0" href="#">Silver</a>
+                                                    <a class="list-group-item border-0" href="#">White</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-mega position-static">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside">Pages</a>
+                            <div class="dropdown-menu shadow w-100">
+                                <div class="mega-content px-4">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-4 col-md-3 py-4 ">
+                                                <div class="list-group ">
+                                                    <a class="list-group-item border-0" href="#">Mega Menu Link</a>
+                                                    <a class="list-group-item border-0" href="#">Mega Menu Link</a>
+                                                    <a class="list-group-item border-0" href="#">Mega Menu Link</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <div class="input-wrapper position-relative">
+                            <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ps-3"></i>
+                            <input class="form-control me-2 ps-5 rounded-5" type="search" placeholder="Search"
+                                aria-label="Search">
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-light rounded-circle position-relative ms-2">
+                        <i class="bi bi-bag-dash"></i> <span
+                            class="position-absolute top-100 start-100 translate-middle badge rounded-pill bg-danger">0
+                            <span class="visually-hidden">unread messages</span></span>
+                    </button>
+                    <button class=" ms-2 btn btn-light rounded-circle"><i class="bi bi-suit-heart"></i></button>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- hero -->
+    <section>
+        <div class="container-fluid hero-bg-img">
+            <div class="row pt-5 d-flex flex-row justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-12 px-5">
+                    <div class="text-content">
+                        <h2 class="text-white fs-1 fw-bold">Get Best Device With Lowest Price.</h2>
+                        <p class="text-white-50">iPad is a line of tablet computers designed, developed and marketed
+                            by Apple Inc., which run the iOS
+                            and iPad OS mobile operating systems. </p>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button class="btn btn-primary rounded-5"> Explore Now <i
+                                class="bi bi-chevron-right"></i></button>
+                        <button class=" btn btn-primary rounded-circle video-btn"
+                            data-src="https://www.youtube.com/embed/fY85ck-pI5c" data-toggle="modal"
+                            data-target="#myModal" data-target="#myModal"><i class="bi bi-play-fill"></i></button>
+
+                        <!-- Modal -->
+                        <div class="modal fade w-100" id="myModal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+
+
+                                    <div class="modal-body">
+
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <!-- 16:9 aspect ratio -->
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="" id="video"
+                                                allowscriptaccess="always" allow="autoplay"></iframe>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 px-5">
+                    <div class="img-toggler">
+                        <img src="./images/hero-carousel-img1.png" alt="hero-carousel-img1" class="img-fluid"
+                            width="200">
+                        <img src="./images/hero-carousel-img2.png" alt="hero-carousel-img2" class="img-fluid"
+                            width="200">
+                        <img src="./images/hero-carousel-img3.png" alt="hero-carousel-img3" class="img-fluid"
+                            width="200">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- section 3 -->
+    <section>
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-sm position-relative mx-sm-3">
+                    <img src="./images/cat2-1.jpg" alt="cat2-1" class="img-fluid rounded-circle">
+                    <button
+                        class="btn btn-light fw-bold rounded-5 position-absolute top-100 start-50 translate-middle px-3 py-3 w-75 hover-class">Headphones</button>
+                </div>
+                <div class="col-sm position-relative mx-sm-3">
+                    <img src="./images/cat3-1.jpg" alt="cat3-1" class="img-fluid rounded-circle">
+                    <button
+                        class="btn btn-light fw-bold rounded-5 position-absolute top-100 start-50 translate-middle px-3 py-3 w-75 hover-class">Smart
+                        Phones</button>
+                </div>
+                <div class="col-sm position-relative mx-sm-3">
+                    <img src="./images/cat5-1.jpg" alt="cat5-1" class="img-fluid rounded-circle">
+                    <button
+                        class="btn btn-light fw-bold rounded-5 position-absolute top-100 start-50 translate-middle px-3 py-3 w-75 hover-class">Laptops</button>
+                </div>
+                <div class="col-sm position-relative mx-sm-3">
+                    <img src="./images/cat1-1.jpg" alt="cat1-1" class="img-fluid rounded-circle">
+                    <button
+                        class="btn btn-light fw-bold rounded-5 position-absolute top-100 start-50 translate-middle px-3 py-3 w-75 hover-class">Smart
+                        Watches</button>
+                </div>
+                <div class="col-sm position-relative mx-sm-3">
+                    <img src="./images/cat4-1.jpg" alt="cat4-1" class="img-fluid rounded-circle">
+                    <button
+                        class="btn btn-light fw-bold rounded-5 position-absolute top-100 start-50 translate-middle px-3 py-3 w-75 hover-class">Tablets</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section 4 -->
+    <section>
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-sm card card-bg-1 mx-sm-3 rounded-5">
+                    <div class="text-content text-white p-5">
+                        <p>TABLETS</p>
+                        <h2 class="fw-bold fs-1">Apple
+                            iPad Air</h2>
+                        <p>iPad is a line of tablet computers designed, developed and marketed by Apple Inc., which run
+                            the iOS and iPad OS mobile operating systems.</p>
+                        <button class="btn btn-light rounded-5 px-3 py-3 fw-bold">Buy Now <i
+                                class="bi bi-chevron-right fw-bold"></i></button>
+                    </div>
+                </div>
+                <div class="col-sm card card-bg-2 mx-sm-3 rounded-5">
+                    <div class="text-content text-white p-5">
+                        <p>SMART</p>
+                        <h2 class="fw-bold fs-1">Apple
+                            Watch</h2>
+                        <p>Apple Watch is a line of smartwatches produced by Apple Inc. It incorporates fitness
+                            tracking, health-oriented capabilities.</p>
+                        <button class="btn btn-light rounded-5 px-3 py-3 fw-bold mt-3">Buy Now <i
+                                class="bi bi-chevron-right fw-bold"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 5 -->
+    <section>
+        <div class="container-fluid">
+            <div class="row py-5">
+                <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                    <div class="product-grid border-1 rounded-5 card">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img class="pic-1 img-fluid rounded-5" src="images/watch-1-1-600x600.png">
+                                <img class="pic-2 img-fluid rounded-5" src="images/gold-watch-1-600x600.png">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#" class="text-decoration-none">Chrome Watch</a></h3>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <div class="price">$399.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                    <div class=" product-grid border-1 rounded-5 card">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img class="pic-1 img-fluid rounded-5" src="images/pr1-1-600x600.jpg">
+                                <img class="pic-2 img-fluid rounded-5" src="images/pr1-2-1-600x600.jpg">
+                            </a>
+                            <span class="product-sale-label rounded-circle">Sale!</span>
+                            <ul class="product-links">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#" class="text-decoration-none">PlayStation 5</a></h3>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <div class="price"><span
+                                    class="text-decoration-line-through fs-6 fw-light">$999.00</span>&nbsp
+                                $899.00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                    <div class="product-grid border-1 rounded-5 card">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img class="pic-1 img-fluid rounded-5" src="images/pr2-1-600x600.jpg">
+                                <img class="pic-2 img-fluid rounded-5" src="images/pr2-1-600x600.jpg">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#" class="text-decoration-none">Tablet X5</a></h3>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <div class="price">$699.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                    <div class="product-grid border-1 rounded-5 card">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img class="pic-1 img-fluid rounded-5" src="./images/pr3-1-600x600.jpg">
+                                <img class="pic-2 img-fluid rounded-5" src="images/pr1-2-1-600x600.jpg">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#" class="text-decoration-none">PlayStation Headset</a></h3>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <div class="price">$599.00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second row -->
+                <div class="col-lg-3 col-md-6 col-sm-12 pt-3">
+                    <div class="product-grid border-1 rounded-5 card">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img class="pic-1 img-fluid rounded-5" src="images/pr4-1-600x600.jpg">
+                                <img class="pic-2 img-fluid rounded-5" src="images/pr4-1-600x600.jpg">
+                            </a>
+                            <span class="product-sale-label rounded-circle">Sale</span>
+                            <ul class="product-links">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">iPhone 14 Pro</a></h3>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <div class="price"><span
+                                    class="text-decoration-line-through fs-6 fw-light">$1,699.00</span>&nbsp
+                                $1,599.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 pt-3">
+                    <div class=" product-grid border-1 rounded-5 card">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img class="pic-1 img-fluid rounded-5" src="images/pr5-1-600x600.jpg">
+                                <img class="pic-2 img-fluid rounded-5" src="images/pr1-2-1-600x600.jpg">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">VR Gaming</a></h3>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <div class="price">$790.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 pt-3">
+                    <div class="product-grid border-1 rounded-5 card">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img class="pic-1 img-fluid rounded-5" src="images/pr6-1-600x600.jpg">
+                                <img class="pic-2 img-fluid rounded-5" src="images/pr6-1-600x600.jpg">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content pt-3">
+                            <h3 class="title"><a href="#">Wireless Controller 5</a></h3>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <div class="price">$399.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 pt-3">
+                    <div class="product-grid border-1 rounded-5 card">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img class="pic-1 img-fluid rounded-5" src="./images/pr7-1-600x600.jpg">
+                                <img class="pic-2 img-fluid rounded-5" src="images/pr7-1-600x600.jpg">
+                            </a>
+                            <span class="product-sale-label rounded-circle">Sale</span>
+                            <ul class="product-links">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Xbox One</a></h3>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <div class="price"><span
+                                    class="text-decoration-line-through fs-6 fw-light">$599.00</span>&nbsp
+                                $499.00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- third row -->
+                <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                    <div class="product-grid border-1 rounded-5 card">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img class="pic-1 img-fluid rounded-5" src="images/pr8-1-600x600.jpg">
+                                <img class="pic-2 img-fluid rounded-5" src="images/pr8-1-600x600.jpg">
+                            </a>
+                            <span class="product-sale-label rounded-circle">Sale</span>
+                            <ul class="product-links">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Black Sports Watch</a></h3>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <div class="price"><span
+                                    class="text-decoration-line-through fs-6 fw-light">$499.00</span>&nbsp
+                                $399.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                    <div class=" product-grid border-1 rounded-5 card">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img class="pic-1 img-fluid rounded-5" src="images/pr9-1-600x600.jpg">
+                                <img class="pic-2 img-fluid rounded-5" src="images/pr9-1-600x600.jpg">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Andriod Phone</a></h3>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <div class="price">$599.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                    <div class="product-grid border-1 rounded-5 card">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img class="pic-1 img-fluid rounded-5" src="images/pr10-1-600x600.jpg">
+                                <img class="pic-2 img-fluid rounded-5" src="images/pr10-1-600x600.jpg">
+                            </a>
+                            <span class="product-sale-label rounded-circle">Sale</span>
+                            <ul class="product-links">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Silver Laptop</a></h3>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <div class="price"><span
+                                    class="text-decoration-line-through fs-6 fw-light">$2,999.00</span>&nbsp
+                                $2,799.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                    <div class="product-grid border-1 rounded-5 card">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img class="pic-1 img-fluid rounded-5" src="./images/pr11-1-600x600.jpg">
+                                <img class="pic-2 img-fluid rounded-5" src="./images/pr11-1-600x600.jpg">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Silver Laptop</a></h3>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <div class="price">$2,399.00</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="shopbtn-container text-center">
+                <button class="btn btn-primary rounded-5 px-5 py-3 fw-bold shopbtn">Shop All Products <i
+                        class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 6 -->
+    <section>
+        <div class="container-fluid my-5">
+            <div class="row row-bg py-5 d-flex align-items-center">
+                <div class="col-sm px-5">
+                    <div class="text-content">
+                        <button class="btn btn-primary my-3 border-0 fw-bold deal-btn">DEAL OF THE DAY</button>
+                        <h2 class="py-3 fw-bold fs-1">Get Virtual Reality with 30% off.</h2>
+                        <p class="py-3">Virtual reality (VR) is a simulated experience that can be similar to or
+                            completely different
+                            from the real world. Applications of VR include entertainment, education and business. </p>
+                        <div class="countdown-wrapper d-flex text-center py-3 flex-lg-row flex-md-row flex-sm-column">
+                            <button class="btn btn-primary rounded-5 px-4 py-3 fw-bold shopbtn me-5"><i
+                                    class="bi bi-percent px-2"></i>Get 30% Off Now</button>
+                            <div class="timer-container d-flex">
+                                <p id="hours" class="px-3 d-inline-flex"></p>
+                                <p id="mins" class="px-3 d-inline-flex"></p>
+                                <p id="secs" class="px-3 d-inline-flex"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm px-5">
+                    <img src="./images/img1-1.png" alt="img1-1" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 7 -->
+    <section>
+        <div class="container-fluid">
+            <div class="text-content d-flex justify-content-between align-items-center">
+                <div class="caption">
+                    <h2 class="fw-bold">Latest News</h2>
+                    <p>Get updated with the latest news of new technologies and gadgets </p>
+                </div>
+                <button class="btn btn-light px-5 py-3 rounded-5 fw-bold blog-btn">All News <i
+                        class="bi bi-chevron-right px-2"></i></button>
+            </div>
+            <div class="row myslider my-5">
+                <div class="col-sm px-3">
+                    <img src="./images/blog2-1.jpg" alt="blog2-1" class="img-fluid rounded-5 mb-3">
+                    <h3 class="fw-bold fs-4">A Place of Silence</h3>
+                    <p class="fs-6">June 10 2017</p>
+                </div>
+                <div class="col-sm px-3">
+                    <img src="./images/blog8-1.jpg" alt="blog8-1" class="img-fluid rounded-5 mb-3">
+                    <h3 class="fw-bold fs-4">How To Create A Logo Like A Pro</h3>
+                    <p class="fs-6">June 10 2017</p>
+                </div>
+                <div class="col-sm px-3">
+                    <img src="./images/blog6-1.jpg" alt="blog6-1" class="img-fluid rounded-5 mb-3">
+                    <h3 class="fw-bold fs-4">Principles of Coldness</h3>
+                    <p class="fs-6">June 10 2017</p>
+                </div>
+                <div class="col-sm px-3">
+                    <img src="./images/blog2-1.jpg" alt="blog2-1" class="img-fluid rounded-5 mb-3">
+                    <h3 class="fw-bold fs-4">A Place of Silence</h3>
+                    <p class="fs-6">June 10 2017</p>
+                </div>
+                <div class="col-sm px-3">
+                    <img src="./images/blog8-1.jpg" alt="blog8-1" class="img-fluid rounded-5 mb-3">
+                    <h3 class="fw-bold fs-4">How To Create A Logo Like A Pro</h3>
+                    <p class="fs-6">June 10 2017</p>
+                </div>
+                <div class="col-sm px-3">
+                    <img src="./images/blog6-1.jpg" alt="blog6-1" class="img-fluid rounded-5 mb-3">
+                    <h3 class="fw-bold fs-4">Principles of Coldness</h3>
+                    <p class="fs-6">June 10 2017</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section-8 -->
+    <section>
+        <div class="container-fluid py-5">
+            <div class="row sub-bg p-5 d-flex align-items-center">
+                <div class="col-sm">
+                    <div class="text-content text-white">
+                        <h2 class="fw-bold fs-1">Our Newsletter</h2>
+                        <p>
+                            Get updates by subscribe our weekly newsletter</p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="input-group">
+                        <input type="email" class="form-control rounded-5 border-0 py-3" placeholder="Enter your email">
+                        <button class="btn btn-primary rounded-5 sub-btn px-5 py-3">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section-9 -->
+    <section>
+        <div class="container-fluid">
+            <div class="row py-5 footer-row">
+                <div class="col-sm me-5">
+                    <img src="./images/logo-footer.png" alt="logo-footer" class="img-fluid pb-5">
+                    <p>Our Address:</p>
+                    <p>No. 869 General Trade Center,
+                        California, USA</p>
+                    <p>24/7 Free Call:</p>
+                    <p>+1 (800) 333 456</p>
+                    <div class="social-links px-3">
+                        <i class="fa fa-twitter px-2" aria-hidden="true"></i>
+                        <i class="fa fa-instagram px-2" aria-hidden="true"></i>
+                        <i class="fa fa-facebook px-2" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <h3 class="fs-5 fw-bold pb-5">Useful Links</h3>
+                    <div class="ftr-links">
+                        <ul>
+                            <li class="list-unstyled py-2"><a href="#" class="text-decoration-none text-black"><i
+                                        class="bi bi-chevron-right"></i>
+                                    Our
+                                    Shop</a></li>
+                            <li class="list-unstyled py-2"><a href="#" class="text-decoration-none text-black"><i
+                                        class="bi bi-chevron-right"></i>
+                                    Servies</a></li>
+                            <li class="list-unstyled py-2"><a href="#" class="text-decoration-none text-black"><i
+                                        class="bi bi-chevron-right"></i>
+                                    News</a></li>
+                            <li class="list-unstyled py-2"><a href="#" class="text-decoration-none text-black"><i
+                                        class="bi bi-chevron-right"></i>
+                                    Contact</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <h3 class="fs-5 fw-bold pb-5">Support</h3>
+                    <div class="ftr-links">
+                        <ul>
+                            <li class="list-unstyled py-2"><a href="#" class="text-decoration-none text-black"><i
+                                        class="bi bi-chevron-right"></i>
+                                    FAQs</a></li>
+                            <li class="list-unstyled py-2"><a href="#" class="text-decoration-none text-black"><i
+                                        class="bi bi-chevron-right"></i>
+                                    Refund</a></li>
+                            <li class="list-unstyled py-2"><a href="#" class="text-decoration-none text-black"><i
+                                        class="bi bi-chevron-right"></i>
+                                    Privacy Policy</a></li>
+                            <li class="list-unstyled py-2"><a href="#" class="text-decoration-none text-black"><i
+                                        class="bi bi-chevron-right"></i>
+                                    Report</a></li>
+                            <li class="list-unstyled py-2"><a href="#" class="text-decoration-none text-black"><i
+                                        class="bi bi-chevron-right"></i>
+                                    DMCA</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <h3 class="fs-5 fw-bold pb-5">Information</h3>
+                    <div class="ftr-links">
+                        <ul>
+                            <li class="list-unstyled py-2"><a href="#" class="text-decoration-none text-black"><i
+                                        class="bi bi-chevron-right"></i>
+                                    About Us</a></li>
+                            <li class="list-unstyled py-2"><a href="#" class="text-decoration-none text-black"><i
+                                        class="bi bi-chevron-right"></i>
+                                    Our Servies</a></li>
+                            <li class="list-unstyled py-2"><a href="#" class="text-decoration-none text-black"><i
+                                        class="bi bi-chevron-right"></i>
+                                    Pricing Plan</a></li>
+                            <li class="list-unstyled py-2"><a href="#" class="text-decoration-none text-black"><i
+                                        class="bi bi-chevron-right"></i>
+                                    Vendor Shop</a></li>
+                            <li class="list-unstyled py-2"><a href="#" class="text-decoration-none text-black"><i
+                                        class="bi bi-chevron-right"></i>
+                                    Affiliate</a></li>
+                            <li class="list-unstyled py-2"><a href="#" class="text-decoration-none text-black"><i
+                                        class="bi bi-chevron-right"></i>
+                                    Stores</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <h3 class="fs-5 fw-bold pb-5">Services</h3>
+                    <div class="ftr-links">
+                        <ul>
+                            <li class="list-unstyled py-2"><a href="#" class="text-decoration-none text-black"><i
+                                        class="bi bi-chevron-right"></i>
+                                    Products</a></li>
+                            <li class="list-unstyled py-2"><a href="#" class="text-decoration-none text-black"><i
+                                        class="bi bi-chevron-right"></i>
+                                    Payment</a></li>
+                            <li class="list-unstyled py-2"><a href="#" class="text-decoration-none text-black"><i
+                                        class="bi bi-chevron-right"></i>
+                                    Discount</a></li>
+                            <li class="list-unstyled py-2"><a href="#" class="text-decoration-none text-black"><i
+                                        class="bi bi-chevron-right"></i>
+                                    Promotional</a></li>
+                            <li class="list-unstyled py-2"><a href="#" class="text-decoration-none text-black"><i
+                                        class="bi bi-chevron-right"></i>
+                                    Gifts</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button type="button" class="btn btn-danger btn-floating btn-lg rounded-circle border-0" id="btn-back-to-top">
+        <i class="fa fa-chevron-up"></i>
+    </button>
+
+
+</div>
+
+
+<body>
+    <script src="index.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- <script src="https://cdn.rawgit.com/JacobLett/bootstrap4-latest/master/bootstrap-4-latest.min.js"></script> -->
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
