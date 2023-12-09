@@ -97,6 +97,16 @@ document.addEventListener("DOMContentLoaded", function () {
                             slidesToShow: 1,
                             dots: false
                         }
+                    },
+                    {
+                        breakpoint: 320,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1,
+                            dots: false
+                        }
                     }
                 ]
             });
@@ -109,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // DOMContentLoaded  end
 
 // Set the date we're counting down to
-var countDownDate = new Date("Dec 09, 2023 15:00:00").getTime();
+var countDownDate = new Date("Dec 11, 2023 24:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {

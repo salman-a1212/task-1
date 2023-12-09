@@ -325,3 +325,7 @@ input:-moz-placeholder {
   display: none;
   background-color: #0088ff !important;
 }
+
+ul {
+  padding-left: 0 !important;
+}
