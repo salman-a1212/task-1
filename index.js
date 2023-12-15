@@ -68,6 +68,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 autoplay: true,
                 autoplaySpeed: 10000,
             });
+            $('.mySlider').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 10000,
+            });
 
             $('.myslider').slick({
                 infinite: true,
@@ -111,6 +120,51 @@ document.addEventListener("DOMContentLoaded", function () {
                 ]
             });
 
+            // $('.blog-slider').slick({
+            //     infinite: true,
+            //     slidesToShow: 3,
+            //     slidesToScroll: 1,
+            //     dots: true,
+            //     arrows: false,
+            //     autoplay: true,
+            //     autoplaySpeed: 10000,
+            //     responsive: [
+            //         {
+            //             breakpoint: 768,
+            //             settings: {
+            //                 arrows: false,
+            //                 centerMode: true,
+            //                 centerPadding: '40px',
+            //                 slidesToShow: 3,
+            //                 dots: false,
+            //                 variableWidth: true,
+            //             }
+            //         },
+            //         {
+            //             breakpoint: 480,
+            //             settings: {
+            //                 arrows: false,
+            //                 centerMode: true,
+            //                 centerPadding: '40px',
+            //                 slidesToShow: 1,
+            //                 dots: false,
+            //                 variableWidth: true,
+            //             }
+            //         },
+            //         {
+            //             breakpoint: 320,
+            //             settings: {
+            //                 arrows: false,
+            //                 centerMode: true,
+            //                 centerPadding: '40px',
+            //                 slidesToShow: 1,
+            //                 dots: false,
+            //                 variableWidth: true,
+            //             }
+            //         }
+            //     ]
+            // });
+
             // document ready  
         });
     }
@@ -119,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // DOMContentLoaded  end
 
 // Set the date we're counting down to
-var countDownDate = new Date("Dec 11, 2023 24:00:00").getTime();
+var countDownDate = new Date("Dec 15, 2023 24:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -175,3 +229,7 @@ function backToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+
+// home.html 
+

@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+</head>
+
+<body>
+    <!-- main container wrapper-->
+    <div class="main_container">
+        <!-- section 1 navbar -->
+        <section>
+            <div class="nav nav-comp">
+                <div class="nav-btn">
+                    <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+                <input type="checkbox" id="nav-check">
+                <div class="nav-header">
+                    <div class="nav-title">
+                        <img src="./images/logo-header.png" alt="logo-header" width="180" height="42"
+                            class="logo-header">
+                    </div>
+                </div>
+
+                <div class="nav-links nav_links">
+                    <ul>
+                        <li><a href="#" target="_blank">Home</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="#" target="_blank" class="dropbtn">Shop</a>
+                                <div class="dropdown-content">
+                                    <div class="row">
+                                        <div class="column">
+                                            <h3>Shop by Brand</h3>
+                                            <div class="list-group">
+                                                <a class="list-group-item border-0" href="#"><i
+                                                        class="bi bi-chevron-right"></i>Apple</a>
+                                                <a class="list-group-item border-0" href="#"><i
+                                                        class="bi bi-chevron-right"></i>Sony</a>
+                                                <a class="list-group-item border-0" href="#"><i
+                                                        class="bi bi-chevron-right"></i>Samsung</a>
+                                                <a class="list-group-item border-0" href="#"><i
+                                                        class="bi bi-chevron-right"></i>Canon</a>
+                                                <a class="list-group-item border-0" href="#"><i
+                                                        class="bi bi-chevron-right"></i>Huawei</a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <h3 class="fw-bold">Shop by Price</h3>
+                                            <div class="list-group">
+                                                <a class="list-group-item border-0" href="#">Under $50</a>
+                                                <a class="list-group-item border-0" href="#">$50 - $100</a>
+                                                <a class="list-group-item border-0" href="#">$100 - $200</a>
+                                                <a class="list-group-item border-0" href="#">$200 - $500</a>
+                                                <a class="list-group-item border-0" href="#">Over $500</a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <h3 class="fw-bold">Categories</h3>
+                                            <div class="list-group">
+                                                <a class="list-group-item border-0" href="#"><i
+                                                        class="bi bi-chevron-right"></i>Headphones</a>
+                                                <a class="list-group-item border-0" href="#"><i
+                                                        class="bi bi-chevron-right"></i>Smart Phones</a>
+                                                <a class="list-group-item border-0" href="#"><i
+                                                        class="bi bi-chevron-right"></i>Laptops</a>
+                                                <a class="list-group-item border-0" href="#"><i
+                                                        class="bi bi-chevron-right"></i>Smart Watches</a>
+                                                <a class="list-group-item border-0" href="#"><i
+                                                        class="bi bi-chevron-right"></i>Tablets</a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <h3 class="fw-bold">Shop by Color</h3>
+                                            <div class="list-group">
+                                                <a class="list-group-item border-0" href="#"></i>Black</a>
+                                                <a class="list-group-item border-0" href="#"></i>Silver</a>
+                                                <a class="list-group-item border-0" href="#"></i>White</a>
+                                                <a class="list-group-item border-0" href="#"></i>Red</a>
+                                                <a class="list-group-item border-0" href="#"></i>Blue</a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <h3 class="fw-bold">Shop by Brand</h3>
+                                            <div class="list-group">
+                                                <a class="list-group-item border-0" href="#"><i
+                                                        class="bi bi-chevron-right"></i>Her</a>
+                                                <a class="list-group-item border-0" href="#"><i
+                                                        class="bi bi-chevron-right"></i>Him</a>
+                                                <a class="list-group-item border-0" href="#"><i
+                                                        class="bi bi-chevron-right"></i>Gift</a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <img src="./images/banner2-1.jpg" alt="banner2-1" class="menu-img"
+                                                width="200">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="#" target="_blank" class="dropbtn">Categories</a>
+                                <div class="dropdown-content">
+                                    <div class="row">
+                                        <div class="column card">
+                                            <img src="./images/icon6-1.png" alt="icon6-1"
+                                                class="img-fluid align-self-center" width="80">
+                                            <h3 class="text-center fs-5 py-3">Smart Watches</h3>
+                                            <button
+                                                class="btn btn-primary rounded-5 w-auto fs-6 align-self-center">Explore
+                                                Now</button>
+                                        </div>
+                                        <div class="column card">
+                                            <img src="./images/icon2-1.png" alt="icon2-1"
+                                                class="img-fluid align-self-center" width="80">
+                                            <h3 class="text-center fs-5 py-3">Headphones</h3>
+                                            <button
+                                                class="btn btn-primary rounded-5 w-auto fs-6 align-self-center">Explore
+                                                Now</button>
+                                        </div>
+                                        <div class="column card">
+                                            <img src="./images/icon1-1.png" alt="icon1-1"
+                                                class="img-fluid align-self-center" width="80">
+                                            <h3 class="text-center fs-5 py-3">Smart Phones</h3>
+                                            <button
+                                                class="btn btn-primary rounded-5 w-auto fs-6 align-self-center">Explore
+                                                Now</button>
+                                        </div>
+                                        <div class="column card">
+                                            <img src="./images/icon3-1.png" alt="icon3-1"
+                                                class="img-fluid align-self-center" width="80">
+                                            <h3 class="text-center fs-5 py-3">Laptops</h3>
+                                            <button
+                                                class="btn btn-primary rounded-5 w-auto fs-6 align-self-center">Explore
+                                                Now</button>
+                                        </div>
+                                        <div class="column card">
+                                            <img src="./images/icon5-1.png" alt="icon5-1"
+                                                class="img-fluid align-self-center" width="80">
+                                            <h3 class="text-center fs-5 py-3">Gaming Consoles</h3>
+                                            <button
+                                                class="btn btn-primary rounded-5 w-auto fs-6 align-self-center">Explore
+                                                Now</button>
+                                        </div>
+                                        <div class="column card">
+                                            <img src="./images/icon4-1.png" alt="icon4-1"
+                                                class="img-fluid align-self-center" width="80">
+                                            <h3 class="text-center fs-5 py-3">Tablets</h3>
+                                            <button
+                                                class="btn btn-primary rounded-5 w-auto fs-6 align-self-center">Explore
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="custom-width">
+                                <a href="#" target="_blank">Quick Find</a>
+                                <div class="dpd-custom">
+                                    <div class="row">
+                                        <div class="column">
+                                            <h3 class="fw-bold">Categories</h3>
+                                            <div class="list-group">
+                                                <a class="list-group-item border-0" href="#">Smart Watches</a>
+                                                <a class="list-group-item border-0" href="#">Smart Phones</a>
+                                                <a class="list-group-item border-0" href="#">Tablets</a>
+                                                <a class="list-group-item border-0" href="#">Headphones</a>
+                                                <a class="list-group-item border-0" href="#">Custom</a>
+                                                <a class="list-group-item border-0" href="#">More</a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <h3 class="fw-bold">Tags</h3>
+                                            <div class="list-group">
+                                                <a class="list-group-item border-0" href="#">5G</a>
+                                                <a class="list-group-item border-0" href="#">Wifi</a>
+                                                <a class="list-group-item border-0" href="#">Game</a>
+                                                <a class="list-group-item border-0" href="#">Combo</a>
+                                                <a class="list-group-item border-0" href="#">Silver</a>
+                                                <a class="list-group-item border-0" href="#">White</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="custom-width">
+                                <a href="#" target="_blank">Pages</a>
+                                <div class="dpd-custom">
+                                    <nav class="menu">
+                                        <ul>
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="#">About</a></li>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li>
+                                                <a href="#">Dropdown▾</a>
+                                                <ul>
+                                                    <li><a href="#">Submenu 1</a></li>
+                                                    <li><a href="#">Submenu 2</a></li>
+                                                    <li><a href="#">Submenu 3</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-nav-comp">
+                    <div class="input_wrapper">
+                        <i class="bi bi-search input_icon"></i>
+                        <input type="text" class="search-box">
+                    </div>
+                    <button class="nav-cart-btn"><i class="bi bi-bag-dash"></i></button>
+                    <button class="nav-fav-btn"><i class="bi bi-suit-heart"></i></button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- section 2 hero -->
+        <section>
+            <div class="hero-container">
+                <div class="row">
+                    <div class="col">
+                        <div class="hero-content">
+                            <h2>Get <span>Best Device</span> With Lowest Price.</h2>
+                            <p>iPad is a line of tablet computers designed, developed and marketed by Apple Inc., which
+                                run the iOS and iPad OS mobile operating systems. </p>
+                            <button class="hero-btn1">Explore Now <i class="bi bi-chevron-right"></i></button>
+                            <button class="hero-btn2"><i class="bi bi-play-fill"></i></button><a href="#"
+                                class="text-link">Watch
+                                Promotion</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mySlider">
+                            <img src="./images/hero-carousel-img1.png" alt="hero-carousel-img1" width="100%">
+                            <img src="./images/hero-carousel-img2.png" alt="hero-carousel-img2" width="100%">
+                            <img src="./images/hero-carousel-img3.png" alt="hero-carousel-img3" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 3 -->
+        <section>
+            <div class="products-container">
+                <div class="row">
+                    <div class="col">
+                        <img src="./images/cat2-1.jpg" alt="cat2-1" class="prod-img">
+                        <button class="prod-btn">Headphones</button>
+                    </div>
+                    <div class="col">
+                        <img src="./images/cat3-1.jpg" alt="cat3-1" class="prod-img">
+                        <button class="prod-btn">Smart Phones</button>
+                    </div>
+                    <div class="col">
+                        <img src="./images/cat5-1.jpg" alt="cat5-1" class="prod-img">
+                        <button class="prod-btn">Laptops</button>
+                    </div>
+                    <div class="col">
+                        <img src="./images/cat1-1.jpg" alt="cat1-1" class="prod-img">
+                        <button class="prod-btn">Smart Watches</button>
+                    </div>
+                    <div class="col">
+                        <img src="./images/cat4-1.jpg" alt="cat4-1" class="prod-img">
+                        <button class="prod-btn">Tablets</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section-4 -->
+        <section>
+            <div class="products-banner">
+                <div class="row">
+                    <div class="col banner-bg-1">
+                        <div class="text_content">
+                            <p>TABLETS</p>
+                            <h2 class="">Apple
+                                iPad Air</h2>
+                            <p>iPad is a line of tablet computers designed, developed and marketed by Apple Inc., which
+                                run
+                                the iOS and iPad OS mobile operating systems.</p>
+                            <button class="btn">Buy Now <i class="bi bi-chevron-right fw-bold"></i></button>
+                        </div>
+                    </div>
+                    <div class="col banner-bg-2">
+                        <div class="text_content">
+                            <p>SMART</p>
+                            <h2 class="fw-bold fs-1">Apple
+                                Watch</h2>
+                            <p>Apple Watch is a line of smartwatches produced by Apple Inc. It incorporates fitness
+                                tracking, health-oriented capabilities.</p>
+                            <button class="btn btn-2">Buy Now <i class="bi bi-chevron-right fw-bold"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 5 -->
+        <section>
+            <div class="products-card">
+                <div class="row">
+                    <div class="col">
+                        <a href="#">
+                            <img src="./images/watch-1-1-600x600.png" alt="watch-1-1-600x600" width="250"></a>
+                        <div class="content">
+                            <h4>Chrome Watch</h4>
+                            <ul class="rating-container">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <p>$399.00</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <img src="images/pr1-1-600x600.jpg" alt="watch-1-1-600x600" width="250"></a>
+                        <span class="product-sale-label">Sale!</span>
+                        <div class="content">
+                            <h4>PlayStation 5</h4>
+                            <ul class="rating-container">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <p><span class="text-decoration-line-through fs-6 fw-light">$999.00</span>&nbsp
+                                $899.00</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <img src="images/pr2-1-600x600.jpg" alt="watch-1-1-600x600" width="250"></a>
+                        <div class="content">
+                            <h4>Tablet X5</h4>
+                            <ul class="rating-container">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <p>$699.00</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <img src="./images/pr3-1-600x600.jpg" alt="watch-1-1-600x600" width="250"></a>
+                        <div class="content">
+                            <h4>PlayStation Headset</h4>
+                            <ul class="rating-container">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <p>$599.00</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <a href="#">
+                                <img src="images/pr4-1-600x600.jpg" alt="watch-1-1-600x600" width="250"></a>
+                            <span class="product-sale-label">Sale!</span>
+                            <div class="content">
+                                <h4>iPhone 14 Pro</h4>
+                                <ul class="rating-container">
+                                    <li class="fa fa-star"></li>
+                                    <li class="fa fa-star"></li>
+                                    <li class="fa fa-star"></li>
+                                    <li class="fa fa-star"></li>
+                                    <li class="fa fa-star-o"></li>
+                                </ul>
+                                <p><span class="text-decoration-line-through fs-6 fw-light">$1,699.00</span>&nbsp
+                                    $1,599.00</p>
+                            </div>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <img src="images/pr5-1-600x600.jpg" alt="watch-1-1-600x600" width="250"></a>
+                        <div class="content">
+                            <h4>VR Gaming</h4>
+                            <ul class="rating-container">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <p>$790.00</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <img src="images/pr6-1-600x600.jpg" alt="watch-1-1-600x600" width="250"></a>
+                        <div class="content">
+                            <h4>Wireless Controller 5</h4>
+                            <ul class="rating-container">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <p>$399.00</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <img src="./images/pr7-1-600x600.jpg" alt="watch-1-1-600x600" width="250"></a>
+                        <span class="product-sale-label">Sale!</span>
+                        <div class="content">
+                            <h4>Xbox One</h4>
+                            <ul class="rating-container">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <p>$499.00</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <img src="images/pr8-1-600x600.jpg" alt="watch-1-1-600x600" width="250"></a>
+                        <span class="product-sale-label">Sale!</span>
+                        <div class="content">
+                            <h4>Black Sports Watch</h4>
+                            <ul class="rating-container">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <p>$399.00</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <img src="images/pr9-1-600x600.jpg" alt="watch-1-1-600x600" width="250"></a>
+                        <div class="content">
+                            <h4>Andriod Phone</h4>
+                            <ul class="rating-container">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <p>$599.00</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/pr10-1-600x600.jpg" alt="watch-1-1-600x600" width="250">
+                        <span class="product-sale-label">Sale!</span>
+                        <div class="content">
+                            <h4>Silver Laptop</h4>
+                            <ul class="rating-container">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <p>$2,799.00</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/pr11-1-600x600.jpg" alt="watch-1-1-600x600" width="250">
+                        <div class="content">
+                            <h4>Silver Laptop</h4>
+                            <ul class="rating-container">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star-o"></li>
+                            </ul>
+                            <p>$2,399.00</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="shopbtn-container">
+                    <button class="shopbtn">Shop All Products <i class="bi bi-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 6 -->
+        <section>
+            <div class="sale-banner">
+                <div class="row">
+                    <div class="col">
+                        <div class="content_wrapper">
+                            <button class="btn-like">DEAL OF THE DAY</button>
+                            <h2>Get <span>Virtual Reality</span> with 30% off.</h2>
+                            <p> Virtual reality (VR) is a simulated experience that can be similar to or completely
+                                different
+                                from the real world. Applications of VR include entertainment, education and business.
+                            </p>
+                            <div class="timer-wrapper">
+                                <button><b><i class="bi bi-percent"></i></b> 30% Off Now</button>
+                                <div class="timer-container">
+                                    <p id="hours" class="hours"></p>
+                                    <p id="mins" class="mins"></p>
+                                    <p id="secs" class="secs"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="./images/img1-1.png" alt="img1-1" class="vr-img" width="100%">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- section 7 news blog -->
+        <section>
+            <div class="news-blog">
+                <div class="text-content">
+                    <div class="caption">
+                        <h2 class="news-title">Latest <span>News</span></h2>
+                        <p>Get updated with the latest news of new technologies and gadgets </p>
+                    </div>
+                    <button class="news-btn">All News <i class="bi bi-chevron-right"></i></button>
+                </div>
+                <div class="row blog-slider">
+                    <div class="col">
+                        <img src="./images/blog2-1.jpg" alt="blog2-1" class="news-img" width="100%">
+                        <h3 class="blog-title">A Place of Silence</h3>
+                        <p class="blog-date">June 10 2017</p>
+                    </div>
+                    <div class="col">
+                        <img src="./images/blog8-1.jpg" alt="blog8-1" class="news-img" width="100%">
+                        <h3 class="blog-title">How To Create A Logo Like A Pro</h3>
+                        <p class="blog-date">June 10 2017</p>
+                    </div>
+                    <div class="col">
+                        <img src="./images/blog6-1.jpg" alt="blog6-1" class="news-img" width="100%">
+                        <h3 class="blog-title">Principles of Coldness</h3>
+                        <p class="blog-date">June 10 2017</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 8 newsletter-form -->
+        <section>
+            <div class="newsletter-form">
+                <div class="row">
+                    <div class="col">
+                        <div class="text-content">
+                            <h2 class="newsletter-title">Our <span>Newsletter</span></h2>
+                            <p class="newstag">
+                                Get updates by subscribe our weekly newsletter</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group">
+                            <input type="email" class="newsletter-input" placeholder="Enter your email">
+                            <button class="sub-btn">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 9 footer -->
+        <section>
+            <footer>
+                <div class="row">
+                    <div class="col">
+                        <img src="./images/logo-footer.png" alt="logo-footer" class="img-fluid pb-5" width="250">
+                        <p>Our Address:</p>
+                        <p><b>No. 869 General Trade Center,
+                                California, USA</b></p>
+                        <p>24/7 Free Call:</p>
+                        <p><b>+1 (800) 333 456</b></p>
+                        <div class="social-links ">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3 class="col-head">Useful Links</h3>
+                        <div class="ftr-links">
+                            <ul>
+                                <li class=""><a href="#" class=""><i class="bi bi-chevron-right"></i>
+                                        Our
+                                        Shop</a></li>
+                                <li class=""><a href="#" class=""><i class="bi bi-chevron-right"></i>
+                                        Servies</a></li>
+                                <li class=""><a href="#" class=""><i class="bi bi-chevron-right"></i>
+                                        News</a></li>
+                                <li class=""><a href="#" class=""><i class="bi bi-chevron-right"></i>
+                                        Contact</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3 class="col-head">Support</h3>
+                        <div class="ftr-links">
+                            <ul>
+                                <li class=""><a href="#" class=""><i class="bi bi-chevron-right"></i>
+                                        FAQs</a></li>
+                                <li class=""><a href="#" class=""><i class="bi bi-chevron-right"></i>
+                                        Refund</a></li>
+                                <li class=""><a href="#" class=""><i class="bi bi-chevron-right"></i>
+                                        Privacy Policy</a></li>
+                                <li class=""><a href="#" class=""><i class="bi bi-chevron-right"></i>
+                                        Report</a></li>
+                                <li class=""><a href="#" class=""><i class="bi bi-chevron-right"></i>
+                                        DMCA</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3 class="col-head">Information</h3>
+                        <div class="ftr-links">
+                            <ul>
+                                <li class=""><a href="#" class=""><i class="bi bi-chevron-right"></i>
+                                        About Us</a></li>
+                                <li class=""><a href="#" class=""><i class="bi bi-chevron-right"></i>
+                                        Our Servies</a></li>
+                                <li class=""><a href="#" class=""><i class="bi bi-chevron-right"></i>
+                                        Pricing Plan</a></li>
+                                <li class=""><a href="#" class=""><i class="bi bi-chevron-right"></i>
+                                        Vendor Shop</a></li>
+                                <li class=""><a href="#" class=""><i class="bi bi-chevron-right"></i>
+                                        Affiliate</a></li>
+                                <li class=""><a href="#" class=""><i class="bi bi-chevron-right"></i>
+                                        Stores</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3 class="col-head">Services</h3>
+                        <div class="ftr-links">
+                            <ul>
+                                <li class=""><a href="#" class=""><i class="bi bi-chevron-right"></i>
+                                        Products</a></li>
+                                <li class=""><a href="#" class=""><i class="bi bi-chevron-right"></i>
+                                        Payment</a></li>
+                                <li class=""><a href="#" class=""><i class="bi bi-chevron-right"></i>
+                                        Discount</a></li>
+                                <li class=""><a href="#" class=""><i class="bi bi-chevron-right"></i>
+                                        Promotional</a></li>
+                                <li class=""><a href="#" class=""><i class="bi bi-chevron-right"></i>
+                                        Gifts</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-payment">
+                    <p>Gadgets Shop © 2023 All Rights Reserved.</p>
+                    <img src="./images/payment.png" alt="payment" width="300">
+                </div>
+            </footer>
+        </section>
+
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
