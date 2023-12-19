@@ -1369,13 +1369,17 @@ footer .row .col p {
 }
 
 .dropdown-content {
-  display: none;
+  /* display: none; */
   position: absolute;
   background-color: #fff;
   width: 100%;
   left: 0;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  margin-top: 30px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
 }
 .custom-width {
   position: relative;
@@ -1384,20 +1388,25 @@ footer .row .col p {
 
 .dpd-custom {
   width: auto;
-  display: none;
+  /* display: none; */
   position: absolute;
   background-color: #fff;
   left: 0;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  margin-top: 30px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
 }
 .custom-width:hover .dpd-custom {
   display: grid !important;
-  grid-template-columns: repeat(2, 1fr) !important;
+  grid-template-columns: repeat(1, 1fr) !important;
   gap: 50px;
   grid-auto-rows: minmax(100px, auto);
   border-radius: 10px;
-  margin-top: 30px;
+  visibility: visible;
+  opacity: 1;
 }
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -1406,7 +1415,12 @@ footer .row .col p {
   gap: 50px;
   grid-auto-rows: minmax(100px, auto);
   border-radius: 10px;
-  margin-top: 30px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.show {
+  display: block;
 }
 
 /* Create three equal columns that floats next to each other */
@@ -1462,10 +1476,60 @@ footer .row .col p {
   clear: both;
 }
 
+@media screen and (max-width: 768px) {
+  .column {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .list-group a {
+    text-align: center;
+  }
+  .dropdown-content,
+  .dpd-custom {
+    margin-top: 5px;
+  }
+  .card {
+    margin: 0;
+  }
+  .custom-width {
+    position: static;
+  }
+
+  .dpd-custom {
+    width: 100%;
+    /* display: none; */
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
     height: auto;
+    text-align: center;
+  }
+  .list-group a {
+    text-align: center;
+  }
+  .dropdown-content,
+  .dpd-custom {
+    margin-top: 5px;
+  }
+  .dpd-custom {
+    width: 100% !important;
+  }
+  .custom-width {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr) !important;
   }
 }
 
@@ -1523,4 +1587,21 @@ footer .row .col p {
 .menu ul {
   top: 0;
   left: 100%;
+}
+
+@media (max-width: 768px) {
+  .menu ul ul li {
+    width: 100% !important;
+  }
+  .menu ul ul {
+    top: 100%;
+    left: 0;
+    width: 100% !important;
+  }
+
+  .menu ul {
+    top: 100%;
+    left: 0;
+    width: 100% !important;
+  }
 }
