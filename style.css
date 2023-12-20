@@ -627,10 +627,15 @@ ul {
     justify-content: center;
     align-items: center;
   }
+
+  .hero-container .row .col {
+    width: 100%;
+  }
+
   .hero-content h2 {
-    margin: 20px 0;
-    padding: 20px 0;
-    font-size: 25px;
+    margin: 20px;
+    padding: 20px;
+    font-size: 40px;
     color: #fff;
   }
   .hero-container {
@@ -643,27 +648,32 @@ ul {
   }
   .hero-content p {
     color: #fff;
-    padding: 10px 0;
-    margin: 10px 0;
-  }
-  .hero-content h2 {
-    color: #fff;
-    padding: 10px 0;
-    margin: 10px 0;
+    padding: 15px;
+    margin: 15px;
   }
   .hero-btn1,
   .hero-btn2 {
     display: block;
     padding: 20px;
+    margin: 20px;
   }
   .hero-content .hero-btn2 {
     text-align: center;
-    margin: 10px 0;
+    margin: 20px 0;
+    padding: 20px 0;
   }
   .hero-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .hero-btn1 {
+    width: 200px;
+  }
+  .mySlider img {
+    align-self: center;
+    margin: 20px;
+    padding: 10px;
   }
 }
 
@@ -736,7 +746,6 @@ ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
   }
   .prod-btn {
     font-size: 13px;
